@@ -1,0 +1,53 @@
+# Byte-code files
+__pycache__/
+*.pyc
+*.pyd
+*.pyo
+*.egg-info/
+.eggs/
+
+# Virtual environment
+venv/
+env/
+ENV/
+.venv/
+
+# Editor/IDE-specific files
+.idea/  # For PyCharm
+.vscode/ # For VS Code (optional, can contain useful project settings)
+*.swp   # For Vim
+
+# Distribution / build files
+dist/
+build/
+wheels/
+share/man/
+local/
+
+# Documentation
+docs/_build/
+
+# Package managers
+# lock files are generally recommended to be committed
+#
+Pipfile.lock 
+poetry.lock
+uv.lock
+
+# Test and coverage
+.coverage
+.pytest_cache/
+nosetests.xml
+coverage.xml
+
+# Runtime files
+*.sqlite3
+*.db
+.env # Recommended for sensitive information like API keys
+.flaskenv
+
+# OS-generated files
+.DS_Store # macOS
+Thumbs.db # Windows
+
+.history
