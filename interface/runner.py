@@ -2,7 +2,12 @@ from core.engine import Assistant
 from core.history import History
 from interface.output import Output
 from interface.errors import ErrorHandler
+from config.logging_config import LoggingConfig
+from utils.logger import Logger
 
+
+LoggingConfig.setup_logging()
+logger = Logger.get_logger(__name__)
 
 class Runner:
     @staticmethod
@@ -12,7 +17,7 @@ class Runner:
 
         history.load_history()
         Output.start()
-
+        logger.info("Runner initialized.")
         while True:
             try:
                 user_input = Output.get_input()

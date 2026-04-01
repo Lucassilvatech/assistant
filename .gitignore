@@ -20,6 +20,7 @@ ENV/
 # Distribution / build files
 dist/
 build/
+logs/
 wheels/
 share/man/
 local/
